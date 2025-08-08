@@ -11,38 +11,111 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ setCursorVariant })
   const portfolioCategories = [
     { 
       title: 'Social Media Posts', 
-      items: Array(4).fill(null).map((_, i) => ({
-        image: `/portfolio/social/sm${i+1}-min.png`,
-        title: `Social Media Design #${i+1}`,
-        description: 'Instagram & Facebook Content'
-      }))
+      items: [
+        {
+          image: 'https://ucarecdn.com/70d6c0a2-78e9-4455-ac81-3d6ba0b96020/sm1min.png', // Mock URL for #1
+          title: 'Social Media Design #1',
+          description: 'Instagram & Facebook Content'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636941/sm2-min_h8nhhz.png',
+          title: 'Social Media Design #2',
+          description: 'Instagram & Facebook Content'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636960/sm3-min_e5snag.png',
+          title: 'Social Media Design #3',
+          description: 'Instagram & Facebook Content'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636969/sm4-min_ostnyx.png',
+          title: 'Social Media Design #4',
+          description: 'Instagram & Facebook Content'
+        }
+        
+      ]
     },
     { 
       title: 'Amazon Listing Images', 
-      items: Array(5).fill(null).map((_, i) => ({
-        image: `/portfolio/amazon/amazon${i+1}-min.png`,
-        title: `Product Listing #${i+1}`,
-        description: 'E-commerce Photography'
-      }))
+      items: [
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636929/amazon1-min_fipanx.png',
+          title: 'Product Listing #1',
+          description: 'E-commerce Photography'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636930/amazon2-min_smcvbc.png',
+          title: 'Product Listing #2',
+          description: 'E-commerce Photography'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636927/amazon3-min_mqdfbi.png',
+          title: 'Product Listing #3',
+          description: 'E-commerce Photography'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636926/amazon4-min_glng3n.png',
+          title: 'Product Listing #4',
+          description: 'E-commerce Photography'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636928/amazon5-min_fs90va.png',
+          title: 'Product Listing #5',
+          description: 'E-commerce Photography'
+        }
+      ]
     },
     { 
       title: 'AI Product and CGI Ads', 
-      items: Array(5).fill(null).map((_, i) => ({
-        image: `/portfolio/ai-cgi/ai${i+1}-min.png`,
-        title: `CGI Ad #${i+1}`,
-        description: '3D Product Visualization'
-      }))
+      items: [
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636928/ai1-min_mhbjag.png',
+          title: 'CGI Ad #1',
+          description: '3D Product Visualization'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636926/ai2-min_yttfmt.png',
+          title: 'CGI Ad #2',
+          description: '3D Product Visualization'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636926/ai3-min_ryiakh.png',
+          title: 'CGI Ad #3',
+          description: '3D Product Visualization'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636927/ai4-min_y17o26.png',
+          title: 'CGI Ad #4',
+          description: '3D Product Visualization'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636928/ai5-min_n3yopk.png',
+          title: 'CGI Ad #5',
+          description: '3D Product Visualization'
+        }
+      ]
     },
     { 
       title: 'Logo and Branding', 
-      items: Array(3).fill(null).map((_, i) => ({
-        image: `/portfolio/branding/branding${i+1}.png`,
-        title: `Brand Identity #${i+1}`,
-        description: 'Logo & Visual Identity'
-      }))
+      items: [
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636931/branding1_pzio8f.png',
+          title: 'Brand Identity #1',
+          description: 'Logo & Visual Identity'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636929/branding2_q4rlgm.png',
+          title: 'Brand Identity #2',
+          description: 'Logo & Visual Identity'
+        },
+        {
+          image: 'https://res.cloudinary.com/djskedmbr/image/upload/v1754636930/branding3_qdhsrc.png',
+          title: 'Brand Identity #3',
+          description: 'Logo & Visual Identity'
+        }
+      ]
     },
   ];
-
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}
